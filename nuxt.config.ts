@@ -35,7 +35,7 @@ export default defineNuxtConfig({
 
   ssr: false,
   components: true,
-  spaLoadingTemplate: false, //"pages/loading.html",
+  spaLoadingTemplate: "pages/loading.html",
   
   modules: [
     "@pinia/nuxt",
