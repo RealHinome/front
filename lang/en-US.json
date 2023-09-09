@@ -1,4 +1,4 @@
 {
-    "Hello THERE": "Hello THERE",
-    "There are {number} countries.": "There are {number} countries."
+    "Hello {username}": "Hello {username}",
+    "You are not connected": "You are not connected"
 }
