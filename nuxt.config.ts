@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     ["@nuxtjs/apollo", {
       clients: {
         default: {
-          httpEndpoint: "http://localhost:8888/graphql",
+          httpEndpoint: "https://testapi.gravitalia.com/graphql",
           /*httpLinkOptions: {
             credentials: "same-origin",
             httpOnly: false
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       defaultLocale: "en",
       strategy: "no_prefix",
       lazy: false,
-      langDir: "lang",
+      langDir: "locales",
       detectBrowserLanguage: {
         useCookie: true,
         cookieKey: "locale",
@@ -90,6 +90,11 @@ export default defineNuxtConfig({
       storageKey: "mode"
     }]
   ],
+
+  routeRules: {
+    // Static generation
+    "/": { prerender: true },
+  },
 
   devtools: { enabled: true },
 
