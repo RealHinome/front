@@ -38,15 +38,16 @@ export default defineNuxtConfig({
   spaLoadingTemplate: false, //"pages/loading.html",
   
   modules: [
+    "@pinia/nuxt",
     "@unocss/nuxt",
     ["@nuxtjs/apollo", {
       clients: {
         default: {
-          httpEndpoint: "https://countries.trevorblades.com/",
-          httpLinkOptions: {
+          httpEndpoint: "http://localhost:8888/graphql",
+          /*httpLinkOptions: {
             credentials: "same-origin",
             httpOnly: false
-          }
+          }*/
         }
       }
     }],
